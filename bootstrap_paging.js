@@ -14,6 +14,8 @@
                     target: $this.closest('form')
                 }
             }, options);
+            if(settings.availablePages % 1 > 1)
+                settings.availablePages = parseInt(++settings.availablePages);
             var maxPageDifference = settings.maxPages - 1;
             var middlePage = Math.floor(settings.maxPages / 2);
             // Initially set start page number to half the maximum range of pages below current page or 1 (whichever is higher)
