@@ -14,7 +14,7 @@
                     target: $this.closest('form')
                 }
             }, options);
-            if(settings.availablePages % 1 > 1)
+            if(settings.availablePages % 1 > 0)
                 settings.availablePages = parseInt(++settings.availablePages);
             var maxPageDifference = settings.maxPages - 1;
             var middlePage = Math.floor(settings.maxPages / 2);
